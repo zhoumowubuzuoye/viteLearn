@@ -14,6 +14,9 @@ importers:
       axios:
         specifier: ^1.7.2
         version: 1.7.2
+      echarts:
+        specifier: ^5.5.1
+        version: 5.5.1
       element-plus:
         specifier: ^2.7.8
         version: 2.7.8(vue@3.4.34(typescript@5.5.4))
@@ -23,6 +26,9 @@ importers:
       normalize.css:
         specifier: ^8.0.1
         version: 8.0.1
+      numeral:
+        specifier: ^2.0.6
+        version: 2.0.6
       pinia:
         specifier: ^2.1.7
         version: 2.1.7(typescript@5.5.4)(vue@3.4.34(typescript@5.5.4))
@@ -515,6 +521,9 @@ packages:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
     engines: {node: '>=0.4.0'}
 
+  echarts@5.5.1:
+    resolution: {integrity: sha512-Fce8upazaAXUVUVsjgV6mBnGuqgO+JNDlcgF79Dksy4+wgGpQB2lmYoO4TSweFg/mZITdpGHomw/cNBJZj1icA==}
+
   element-plus@2.7.8:
     resolution: {integrity: sha512-h6dx2XihAbQaud0v+6O7Fy0b0G3YNplNVH7QnK3csTcvQd4y4raiyMRQpf9EKbRbTMdNrFsqAZrs9ok9DMcJHg==}
     peerDependencies:
@@ -688,6 +697,9 @@ packages:
   normalize.css@8.0.1:
     resolution: {integrity: sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==}
 
+  numeral@2.0.6:
+    resolution: {integrity: sha512-qaKRmtYPZ5qdw4jWJD6bxEf1FJEqllJrwxCLIm0sQU/A7v2/czigzOb+C2uSiFsa9lBUzeH7M1oK+Q+OLxL3kA==}
+
   once@1.4.0:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
 
@@ -792,6 +804,9 @@ packages:
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
+
+  tslib@2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
 
   typescript@5.5.4:
     resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
@@ -909,6 +924,9 @@ packages:
 
   wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
+
+  zrender@5.6.0:
+    resolution: {integrity: sha512-uzgraf4njmmHAbEUxMJ8Oxg+P3fT04O+9p7gY+wJRVxo8Ge+KmYv0WJev945EH4wFuc4OY2NLXz46FZrWS9xJg==}
 
 snapshots:
 
@@ -1277,6 +1295,11 @@ snapshots:
 
   delayed-stream@1.0.0: {}
 
+  echarts@5.5.1:
+    dependencies:
+      tslib: 2.3.0
+      zrender: 5.6.0
+
   element-plus@2.7.8(vue@3.4.34(typescript@5.5.4)):
     dependencies:
       '@ctrl/tinycolor': 3.6.1
@@ -1466,6 +1489,8 @@ snapshots:
 
   normalize.css@8.0.1: {}
 
+  numeral@2.0.6: {}
+
   once@1.4.0:
     dependencies:
       wrappy: 1.0.2
@@ -1575,6 +1600,8 @@ snapshots:
   to-regex-range@5.0.1:
     dependencies:
       is-number: 7.0.0
+
+  tslib@2.3.0: {}
 
   typescript@5.5.4: {}
 
@@ -1690,3 +1717,7 @@ snapshots:
   webpack-virtual-modules@0.6.2: {}
 
   wrappy@1.0.2: {}
+
+  zrender@5.6.0:
+    dependencies:
+      tslib: 2.3.0

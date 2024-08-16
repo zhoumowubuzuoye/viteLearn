@@ -42,6 +42,5 @@ const getIcon = () => {
   color: var(--el-color-primary);
   display: flex;
   align-items: center;
-  height: 70px;
 }
 </style>
